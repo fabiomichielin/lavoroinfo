@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+<link rel="icon" href="favicon.png" type="image/png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approfondimento</title>
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+    font-family: Helvetica, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #5ec300;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+}
+
+.banner {
+    background-color: #5ec300;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+    border-bottom: 1px solid #000000;
+}
+
+footer {
+    background-color: #5ec300;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: left;
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.titolo {
+      text-align: left;
+      font-family: Helvetica, sans-serif !important;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 10px;
+    }
+    .testo {
+      text-align: left;
+      font-family: Helvetica, sans-serif !important;
+      font-size: 18px;
+      padding: 10px;
+    }
+.slideshow-container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin: auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+  <header>
+
+    <div class="banner">
+      <h1>Deriva dei continenti</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="approfondimento.html">Approfondimento</a></li>
+        <li><a href="fonti.html">Fonti</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="titolo">
+    Approfondimento
+  </div>
+<br><br>
+
+  <div class="testo">
+
+    Alfred Wegener, non Wagner, fu il pioniere della teoria della deriva dei continenti. Wegener ha presentato una serie di prove a sostegno della sua teoria, che nel tempo sono state riconosciute come fondamentali per la nostra comprensione della tettonica delle placche. Ecco le quattro principali prove presentate da Wegener:
+
+    Corrispondenza delle forme dei continenti: Wegener notò che i margini dei continenti dell'Africa e del Sud America sembravano adattarsi l'un l'altro come i pezzi di un puzzle. Ad esempio, le coste orientali del Sud America e dell'Africa sembrano adattarsi perfettamente, suggerendo che un tempo fossero unite.
+    
+    Corrispondenza geologica: Wegener ha anche trovato similitudini nella geologia tra continenti separati. Ad esempio, rocce simili e formazioni montuose si trovano in aree geologicamente correlate su continenti diversi, come l'Appalachia negli Stati Uniti e le montagne Caledonidi in Gran Bretagna, Scandinavia e Groenlandia.
+    
+    Corrispondenza paleontologica: Wegener notò che fossili simili di piante e animali preistorici si trovavano su continenti che ora sono separati da vaste distanze oceaniche. Ad esempio, fossili di una specie di felce del Carbonifero, Glossopteris, sono stati trovati in India, Africa, America del Sud, Australia e Antartide. Questo suggerisce che queste terre una volta erano vicine o connesse.
+    
+    Corrispondenza dei glaciali: I depositi glaciali e le striature rocciose suggeriscono che regioni oggi lontane dai ghiacciai, come l'India e l'Australia, un tempo si trovassero in posizioni più fredde e vicine ai poli. Wegener ha notato che le linee di deposito glaciali sembravano continuare oltre le coste attuali dei continenti, indicando che i continenti si sono spostati.
+    
+    Queste prove furono fondamentali nel sostenere la teoria della deriva dei continenti di Wegener. Anche se la sua teoria fu inizialmente respinta, con il tempo è stata riaffermata e sviluppata con ulteriori prove, portando alla comprensione moderna della tettonica delle placche.
+  </div>
+
+  <br><br>
+  <div style="text-align: center;">
+    <img id="immagine" src="1.png" alt="Immagine" style="width: 350px; height: 350px; border: 2px solid black; border-radius: 10px;" onclick="cambiaImmagine()">
+  </div>
+  <script>
+    function cambiaImmagine() {
+      var immagine = document.getElementById("immagine");
+      if (immagine.src.match("3.png")) {
+        immagine.src = "4.png";
+      } else {
+        immagine.src = "3.png";
+      }
+    }
+  </script>
+
+  <br><br><br><br><br>
+
+  <footer>
+    <p>© Fabio Michielin</p>
+  </footer>
+
+
+
+</body>
+</html>

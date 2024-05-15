@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+<link rel="icon" href="favicon.png" type="image/png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+    font-family: Helvetica, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #5ec300;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+}
+
+.banner {
+    background-color: #5ec300;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+    border-bottom: 1px solid #000000;
+}
+
+footer {
+    background-color: #5ec300;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: left;
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.titolo {
+      text-align: left;
+      font-family: Helvetica, sans-serif !important;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 10px;
+    }
+    .testo {
+      text-align: left;
+      font-family: Helvetica, sans-serif !important;
+      font-size: 18px;
+      padding: 10px;
+    }
+.slideshow-container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin: auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+  <header>
+
+    <div class="banner">
+      <h1>Deriva dei continenti</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="approfondimento.html">Approfondimento</a></li>
+        <li><a href="fonti.html">Fonti</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="titolo">
+    Home
+  </div>
+<br><br>
+
+  <div class="testo">
+    La teoria della deriva dei continenti è stata formulata per la prima volta dal geologo tedesco Alfred Wegener nel 1912. Wegener ha ipotizzato che i continenti sulla Terra si muovano lentamente nel corso del tempo. La sua teoria suggeriva che i continenti fossero originariamente uniti in un unico grande supercontinente noto come Pangea, che si sarebbe poi diviso e allontanato nel corso di milioni di anni attraverso un processo chiamato deriva dei continenti.
+
+Le prove a sostegno della deriva dei continenti includono corrispondenze tra le forme dei continenti, le rocce e i fossili trovati su latitudini simili su continenti diversi, nonché i modelli di distribuzione delle specie animali e vegetali. Tuttavia, la teoria di Wegener non fu ampiamente accettata fino a quando non furono sviluppati ulteriori dati e prove, come la scoperta della tettonica a placche negli anni '60.
+
+La tettonica a placche ha fornito una spiegazione più dettagliata di come avviene il movimento dei continenti, mostrando che la litosfera terrestre è divisa in grandi placche che galleggiano sulla densa astenosfera sottostante e che il movimento delle placche è alimentato dalla convezione del mantello terrestre. Questo modello ha rafforzato la comprensione della dinamica della Terra e ha fornito una base più solida per spiegare la deriva dei continenti.
+  </div>
+    
+
+  <footer>
+    <p>© Fabio Michielin</p>
+  </footer>
+
+  <div style="text-align: center;">
+    <img id="immagine" src="1.png" alt="Immagine" style="width: 350px; height: 250px; border: 2px solid black; border-radius: 10px;" onclick="cambiaImmagine()">
+  </div>
+  <script>
+    function cambiaImmagine() {
+      var immagine = document.getElementById("immagine");
+      if (immagine.src.match("1.png")) {
+        immagine.src = "2.png";
+      } else {
+        immagine.src = "1.png";
+      }
+    }
+  </script>
+
+</body>
+</html>
